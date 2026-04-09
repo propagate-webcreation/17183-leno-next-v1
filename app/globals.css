@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-feature-settings: "palt";
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #0B1C3D;
+  background: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', 'Inter', system-ui, sans-serif;
+  text-wrap: balance;
+  word-break: auto-phrase;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+p, li {
+  text-wrap: pretty;
+  word-break: auto-phrase;
+  line-height: 1.7;
+}
+
+/* Subtle great-circle-inspired gradient used in hero */
+.hero-gradient {
+  background:
+    radial-gradient(ellipse 120% 80% at 15% 10%, rgba(37, 99, 235, 0.25), transparent 60%),
+    radial-gradient(ellipse 120% 80% at 90% 0%, rgba(59, 130, 246, 0.22), transparent 55%),
+    linear-gradient(180deg, #0B1C3D 0%, #0B1C3D 55%, #091630 100%);
+}
+
+.hero-grid-overlay {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, #000 40%, transparent 90%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, #000 40%, transparent 90%);
+}
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .motion-safe-animate { animation: none !important; }
+}

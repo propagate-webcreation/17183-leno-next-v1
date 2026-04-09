@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Engine internal (bench artifacts, local reviews, case data)
+.engine/
+
+# webcreate-engine internal traces (auto-added)
+/.engine/
+/llm_raw_output/
+TECH_REQUIREMENTS.md
