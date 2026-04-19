@@ -237,8 +237,8 @@ function Nav() {
 
 function Hero() {
   return (
-    <section id="top" className="relative isolate overflow-hidden hero-gradient text-white">
-      <div aria-hidden className="absolute inset-0 hero-grid-overlay" />
+    <section data-section="hero" id="top" className="relative isolate overflow-hidden hero-gradient text-white">
+      <div data-section="hero" aria-hidden className="absolute inset-0 hero-grid-overlay" />
       <div className="relative mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-center px-6 pb-28 pt-40 md:pt-44">
         <div className="flex items-center gap-3 text-sm text-white/70">
           <span className="relative inline-flex h-2.5 w-2.5 items-center justify-center">
@@ -325,7 +325,7 @@ function TrustStrip() {
 
 function Services() {
   return (
-    <section id="services" className="bg-white py-24 md:py-32">
+    <section data-section="service" id="services" className="bg-white py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <div className="max-w-2xl">
@@ -372,7 +372,7 @@ function Services() {
 function WhyLeno() {
   return (
     <section id="why" className="relative overflow-hidden bg-main py-24 text-white md:py-32">
-      <div aria-hidden className="absolute inset-0 hero-grid-overlay opacity-60" />
+      <div data-section="hero" aria-hidden className="absolute inset-0 hero-grid-overlay opacity-60" />
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="max-w-2xl">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white/70">
@@ -493,7 +493,7 @@ function AdvantageCard({
 
 function Process() {
   return (
-    <section id="process" className="bg-slate-50 py-24 md:py-32">
+    <section data-section="flow" id="process" className="bg-slate-50 py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-2xl">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-main/70">
@@ -621,7 +621,7 @@ function AudiencesSection() {
 
 function About() {
   return (
-    <section id="about" className="bg-slate-50 py-24 md:py-32">
+    <section data-section="about" id="about" className="bg-slate-50 py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-16 md:grid-cols-12 md:gap-20">
           <div className="md:col-span-5">
@@ -737,12 +737,12 @@ function FaqSection() {
 
 function Contact() {
   return (
-    <section id="contact" className="relative overflow-hidden bg-slate-100 py-24 md:py-32">
+    <section data-section="contact" id="contact" className="relative overflow-hidden bg-slate-100 py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid overflow-hidden rounded-[36px] bg-white shadow-card-lift md:grid-cols-5">
           {/* Info side */}
           <aside className="relative flex flex-col justify-between bg-main p-10 text-white md:col-span-2 md:p-12">
-            <div aria-hidden className="absolute inset-0 hero-grid-overlay opacity-70" />
+            <div data-section="hero" aria-hidden className="absolute inset-0 hero-grid-overlay opacity-70" />
             <div className="relative">
               <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]">
                 Request an assessment
